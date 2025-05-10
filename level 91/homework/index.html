@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <style>
+        .cart {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <div>
+        <p>Product 1 - $10</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+    </div>
+    <div>
+        <p>Product 2 - $20</p>
+        <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+    </div>
+    <div>
+        <p>Product 3 - $30</p>
+        <button onclick="addToCart('Product 3', 30)">Add to Cart</button>
+    </div>
+
+    <div class="cart">
+        <h2>Cart</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="totalPrice">0</span></p>
+    </div>
+
+    <script>
+        let total = 0;
+
+        function addToCart(product, price) {
+            const cartItems = document.getElementById('cartItems');
+            const totalPrice = document.getElementById('totalPrice');
+
+            // Add product to the cart
+            const listItem = document.createElement('li');
+            listItem.textContent = `${product} - $${price}`;
+            cartItems.appendChild(listItem);
+
+            // Update total price
+            total += price;
+            totalPrice.textContent = total;
+        }
+    </script>
+</body>
+</html>

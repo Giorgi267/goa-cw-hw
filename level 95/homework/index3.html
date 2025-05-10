@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students = [
+            { name: "Giorgi", surname: "Bibilashvili", grades: [95, 90, 92] },
+            { name: "Nino", surname: "Beridze", grades: [85, 88, 84] },
+            { name: "Lasha", surname: "Kapanadze", grades: [91, 93, 89] },
+            { name: "Tamari", surname: "Gelashvili", grades: [70, 75, 80] },
+            { name: "Ana", surname: "Chikovani", grades: [98, 97, 96] }
+        ];
+
+        const filterstudent = students.filter(students => {
+            const average = student.grades.reduce((sum, grade) => sum + grade, 0) / student.grades.length;
+            return average >= 90; 
+        })
+
+        const studentNames = filteredStudents.map(student => student.name);
+
+        console.log(filteredStudents);
+        console.log(studentNames);
+
+    </script>
+</body>
+</html>

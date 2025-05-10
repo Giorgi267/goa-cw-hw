@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="registrationForm">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <button type="submit">submit</button>
+    </form>
+
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+
+        const form = document.getElementById('registrationForm');
+        const tableBody = document.getElementById('dataTable').querySelector('tbody');
+
+   
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            const newRow = document.createElement('tr');
+
+            const emailCell = document.createElement('td');
+            emailCell.textContent = email;
+            newRow.appendChild(emailCell);
+
+
+            const passwordCell = document.createElement('td');
+            passwordCell.textContent = password;
+            newRow.appendChild(passwordCell);
+
+
+            tableBody.appendChild(newRow);
+
+        });
+    </script>
+
+
+<!-- შევქმენი სარეგისტრაციო ფორმა მერე შევქმენი ცალკე table სადაც შემდეგში ჯავასკრიპტის საშუალებით დავამატებდი tbody-ში მონაცემებს 
+ შემდეგ გამოვიყენე უკვე ჯს სადაც წამოვიღე htmlისგან ორივე table შემდეგ addeventlistener ით დავამატე რო გვერდი არ დარეფრეშდეს და value-ს საშუალებით ვიღებ მონაცემებს 
+ შემდეგ createelemnt-ის საშუალებით ვქქმნი ახალ რიგს რომ დაემატოს tbodu-ში და ბლოლოს ვამატებ ცხრილში appendchild-ის საშუალებით-->
+</body>
+</html>
