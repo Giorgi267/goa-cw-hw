@@ -1,0 +1,22 @@
+nav{
+    transition: 0.5s;
+}
+.first:link{
+    color: blue;
+}
+.first:visited{
+    color: purple;
+}
+.first:hover{
+    color: aqua;
+    background-color: darkblue;
+}
+.first:active{
+    background: none;
+    font-size: larger;
+}
+
+
+.second:hover{
+    color: darkgray;
+}

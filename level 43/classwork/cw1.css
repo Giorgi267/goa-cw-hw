@@ -1,0 +1,16 @@
+input[type = "text"]{
+    color: blueviolet;   
+    border: 5px;
+    border-style: dotted;
+}
+
+input[type = "password"]{
+    color: aqua;
+    border: 3px;
+    border-style: initial;
+}
+input[type = "email"]{
+    border: 8px;
+    color: brown;
+    border-style: outset;
+}

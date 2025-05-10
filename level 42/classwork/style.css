@@ -1,0 +1,20 @@
+.square{
+    color: blueviolet;
+    background-color: darkblue;
+    transition: 0.5s;
+    width: 3px;
+}
+.square:hover{
+    color: chartreuse;
+    background-color: lightblue;
+    width: 5%;
+    
+    
+}
+.square:active{
+    background-color: gold;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    
+}

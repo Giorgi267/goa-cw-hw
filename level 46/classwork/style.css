@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}

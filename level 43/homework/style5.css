@@ -1,0 +1,20 @@
+input {
+    padding: 15px; /* 15px padding on all sides */
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    text-align: left; /* Align text to the left */
+  }
+  
+  input::placeholder {
+    text-align: center; /* Center the placeholder text */
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
