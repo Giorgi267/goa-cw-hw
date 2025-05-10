@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let body = document.body
+        let pardiv = document.createElement('div')
+        body.appendChild(pardiv)
+        let child = document.createElement('div')
+        pardiv.appendChild(child)
+        let child2 = document.createElement('div')
+        child.appendChild(child2)
+
+        body.style.display = 'flex'
+        body.style.justifyContent = 'center'
+        body.style.alignItems = 'center'
+
+        body.style.width = '200px'
+        body.style.height = '200px'
+        body.style.backgroundColor = 'red'
+
+        pardiv.style.display = 'flex'
+        pardiv.style.justifyContent = 'center'
+        pardiv.style.alignItems = 'center'
+
+        pardiv.style.width = '100px'
+        pardiv.style.height = '100px'
+        pardiv.style.backgroundColor = 'green'
+
+        child.style.width = '50px'
+        child.style.height = '50px'
+        child.style.backgroundColor = 'blue'
+    </script>
+</body>
+</html>

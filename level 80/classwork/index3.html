@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <input id="input1" type="text" placeholder="Enter a word">
+    <input id="input2" type="text" placeholder="Repeat the word">
+    <button id="submit">Submit</button>
+
+    <script>
+        document.getElementById("submit").onclick = function () {
+            const input1 = document.getElementById("input1").value;
+            const input2 = document.getElementById("input2").value;
+            
+            if (input1 === input2 && input1 !== "") {
+                console.log("The operation was successful");
+            } else {
+                console.log("The values should be equal and not blank");
+            }
+        };
+    </script>
+</body>
+</html>

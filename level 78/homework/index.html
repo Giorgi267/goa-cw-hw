@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 800px;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+<<<<<<< HEAD
+            display: none;
+=======
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+        }
+
+        .slide.active {
+            opacity: 1;
+>>>>>>> 9d09f874a987caad6808ab07829c0a748cd7a76a
+        }
+
+        .slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        button.prev {
+            left: 10px;
+        }
+
+        button.next {
+            right: 10px;
+        }
+
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+<<<<<<< HEAD
+            <div class="slide">
+=======
+            <div class="slide active">
+>>>>>>> 9d09f874a987caad6808ab07829c0a748cd7a76a
+                <img src="image.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="image copy.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="image copy 2.png" alt="Slide 3">
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+<<<<<<< HEAD
+                slide.style.display = i === index ? 'block' : 'none';
+=======
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+>>>>>>> 9d09f874a987caad6808ab07829c0a748cd7a76a
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+<<<<<<< HEAD
+=======
+        // Automatic slide change every 3 seconds
+        setInterval(nextSlide, 3000);
+
+>>>>>>> 9d09f874a987caad6808ab07829c0a748cd7a76a
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>

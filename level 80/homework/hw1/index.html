@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="myButton">Click Me</button>
+    <p id="message"></p>
+    <!-- EventListener არის მეთოდი, რომელიც გამოიყენება ელემენტზე კონკრეტული მოვლენის (მაგალითად, click, mouseover, keydown) მოსასმენად და შესაბამისი ფუნქციის გასაშვებად, როდესაც ეს მოვლენა მოხდება -->
+    <script>
+        const button = document.getElementById('myButton');
+        const message = document.getElementById('message');
+
+        button.addEventListener('click', function() {
+            message.textContent = 'Button was clicked!';
+        });
+    </script>
+</body>
+</html>

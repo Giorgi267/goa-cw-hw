@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <!-- საიტზე დაამატეთ 3 ფოტო, რომლებსაც გაცენტრავთ და დიზაინის მხრივ დახვეწავთ. საიტზე მოცემული სამი ფოტოდან პირველი ორის შემთხვევაში მათზე მაუსის გადატარებისას შეიცვალოს ეს ფოტოები და კურსორის გაწევის შედეგად ისევ დაუბრუნდეს თავდაპირველ ფოტოს, ხოლო მესამე ფოტო დაჭერის შედეგად ჩაანაცვლეთ სხვა ფოტოთი, ამ შემთხვევაშიც უნდა უბრუნდებოდეს საწყის ფოტოს კურსორის გაწევის შემდეგ; -->
+     <img src="app6-1.jpg" id="image1">
+     <img src="app6-2.jpg" id="image2">
+     <img src="app6-3.jpg" id="image3">
+     <script>
+        let image1 = document.getElementById('image1');
+        let image2 = document.getElementById('image2');
+        let image3 = document.getElementById('image3');
+
+        image1.addEventListener('mouseover', function(){
+            image1.src = 'app6-4.jpg'
+        })
+        image1.addEventListener('mouseout', function(){
+            image1.src = 'app6-1.jpg'
+        })
+
+        image2.addEventListener('mouseover' , function(){
+            image2.src = 'app6-5.jpg'
+        })
+        image2.addEventListener('mouseout' , function(){
+            image2.src = 'app6-2.jpg'
+        })
+
+        image3.addEventListener('click' , function(){
+            image3.src = 'app6-6.jpg'
+        })
+        image3.addEventListener('mouseout' , function(){
+            image3.src = 'app6-3.jpg'
+        })
+        
+     </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img  id="goa"  src="download.png" alt="">
+
+    <script>
+        let goa = document.getElementById('goa')
+        goa.addEventListener("mouseover", function() {
+            goa.src = "download (1).png";
+        });
+        goa.addEventListener("mouseout", function() {
+            goa.src = "download.png";
+        });
+    </script>
+</body>
+</html>
