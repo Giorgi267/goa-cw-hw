@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
+}
+
+#idk {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ing-count {
+    border: 15px solid #53607c;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d90464;
+    text-shadow: 2px -0px #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.ing-count:hover {
+    transform: scale(1.1);
+}
+
+.head {
+    color: white;
+    text-shadow: 2px -0px #d90464;
+    font-size: 6rem;
+}
+
+.fir {
+    background-image: url(crash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sec {
+    background-image: url(kick.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thi {
+    background-image: url(snare.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.foru {
+    background-image: url(tom1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fit {
+    background-image: url(tom2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.six {
+    background-image: url(tom3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sev {
+    background-image: url(tom4.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffaa00;
+}

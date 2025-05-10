@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="red">Click</div>
+    <div id="blue">Click</div>
+    <div id="green">Click</div>
+    <div id="yellow">Click</div>
+    
+    <script>
+        document.addEventListener('click', function(event) {
+            let target = event.target;
+            console.log(target.id)
+            
+            target.style.backgroundColor = target.id;
+            target.style.color = target.id;
+            
+
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f8ff;
+  }
+  
+  main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .ball {
+    width: 100px;
+    height: 100px;
+    background: #ff6347;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.3s;
+  }
+  
