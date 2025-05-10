@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey</title>
+</head>
+<body>
+    <h1>survey</h1>
+    <form action="/submit-survey" method="POST">
+        <!-- ტექსტური ველი -->
+        <label for="name">your name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- ელ. ფოსტის ველი -->
+        <label for="email">your email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- რადიო ღილაკები -->
+        <label for="age">your age:</label><br>
+        <select name="ages" id="age">
+            <option value="under-18">under 18</option>
+            <option value="18-35">18-35</option>
+            <option value="over-35">over 35</option>
+        </select>
+        <br><br>
+
+        <!-- ამორჩევის ველები -->
+        <label>your interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">sport</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">music</label><br>
+        <input type="checkbox" id="travel" name="interests" value="travel">
+        <label for="travel">travel</label><br><br>
+
+        <!-- ჩამოსაშლელი მენიუ -->
+        <label for="country">chose country:</label><br>
+        <select id="country" name="country">
+            <option value="georgia">georgia</option>
+            <option value="usa">usa</option>
+            <option value="uk">uk</option>
+            <option value="germany">germany</option>
+        </select><br><br>
+
+        <!-- თარიღის ველი -->
+        <label for="dob">your birthday:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <!-- ტექსტის არე -->
+        <label for="comments">comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- ღილაკი -->
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

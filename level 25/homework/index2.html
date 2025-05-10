@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+    <form>
+        <!-- Name Field -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Phone Number Field -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+
+        <!-- Event Selection -->
+        <label for="event">Select Event:</label><br>
+        <select id="event" name="event" required>
+            <option value="workshop">Workshop</option>
+            <option value="webinar">Webinar</option>
+            <option value="conference">Conference</option>
+        </select><br><br>
+
+        <!-- Attendance Type -->
+        <label>Attendance Type:</label><br>
+        <input type="radio" id="in-person" name="attendance" value="in-person" required>
+        <label for="in-person">In-person</label><br>
+        <input type="radio" id="online" name="attendance" value="online">
+        <label for="online">Online</label><br><br>
+
+        <!-- Dietary Preferences -->
+        <label>Dietary Preferences (if any):</label><br>
+        <input type="checkbox" id="vegetarian" name="diet" value="vegetarian">
+        <label for="vegetarian">Vegetarian</label><br>
+        <input type="checkbox" id="vegan" name="diet" value="vegan">
+        <label for="vegan">Vegan</label><br>
+        <input type="checkbox" id="halal" name="diet" value="halal">
+        <label for="halal">Halal</label><br><br>
+
+        <!-- Additional Notes -->
+        <label for="notes">Additional Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Any special requests or information"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

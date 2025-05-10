@@ -1,0 +1,36 @@
+<!-- შექმენით სარეგისტრაციო ფორმა სადაც მომხმარებელმა უნდა შეიყვანოს სახელი გვარი, ემაილი, პაროლი, გაიმეოროს პაროლი, ტელეფონის ნომერი და გენდერი, გამოიყენეთ label ები და დააკავშირეთ ისინი სწორად input ებს, ასევე გამოიყენეთ ის ინფუთის ატრიბუტები რაც აქამდე ვისწავლეთ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    <form>
+        <label for="name">enter your name</label>
+        <input type="text" id="name" name="first name" placeholder="enter first name" required>
+        <br><br>
+
+        <label for="last-name">enter your lastname</label>
+        <input type="text" id="last-name" name="lastname" placeholder="enter your lastname" required>
+        <br><br>
+
+        <label for="email">enter email</label>
+        <input type="email" name="email" id="email" placeholder="enter email" required>
+        <br><br>
+
+        <label for="password">enter password</label>
+        <input type="password" name="pass" id="password" placeholder="enter password" required>
+        <br><br>
+
+        <label for="confirm-password">confirm password</label>
+        <input type="password" name="password" id="confirm-password" placeholder="confirm password" required>
+        <br><br>
+
+        <button type="submit">submit</button>
+
+
+    </form>
+</body>
+</html>
