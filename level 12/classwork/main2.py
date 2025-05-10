@@ -1,0 +1,6 @@
+num1 = int(input('enter any number: '))
+num2 = int(input('enter any number: '))
+print(num1 > 30 and num2 < 40)
+print(num1 <100 and num2 >50)
+print(num1 > 30 or num2 < 40)
+print(num1 <100 or num2 >50)
