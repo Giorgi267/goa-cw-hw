@@ -1,0 +1,25 @@
+#1{
+    text-decoration: overline rgb(62, 150, 7);
+    color: aquamarine;
+}
+
+#2{
+    text-decoration: underline rgb(13, 200, 213);
+    color: rgb(173, 74, 3);
+}
+#3{
+    text-decoration: line-through rgb(112, 110, 3);
+    color: rgb(0, 0, 0);
+}
+#4{
+    text-decoration: overline overline rgb(16, 120, 5) ;
+    color: rgb(212, 74, 141);
+}
+#5{
+    text-decoration: line-through overline rgb(109, 86, 130);
+    color: rgb(158, 19, 121);
+}
+#6{
+    text-decoration: underline line-through rgb(8, 157, 206);
+    color: rgb(146, 19, 177);
+}

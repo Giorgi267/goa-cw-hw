@@ -1,0 +1,22 @@
+.parent-div {
+    width: 80%;
+    height: 300px;
+    font-size: 18px;
+    background-color: black;
+}
+
+.child-div-1 {
+    width: 50%;
+    background-color: blue;
+    height: 100%;
+}
+
+.child-paragraph {
+    font-size: 50%;
+}
+
+.child-div-2 {
+    width: 200px;
+    height: 150px;
+    background-color: red;
+}
