@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+    background-color: #212134;
+}
+
+header img{
+    width: 100px;
+}
+
+main{
+    width: 100%;
+
+}
+
+section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.watchdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watchdiv img{
+    width: 500px;
+
+}
+
+.optiondiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+
+.colored{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.colors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.colors div{
+    width: 70px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.black{
+    background-color: black;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.purple{
+    background-color: purple;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.time button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.buy{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+#par{
+    font-size: 35px;
+}
+
+#heading{
+    opacity: 70%;
+    letter-spacing: 20%;
+}
+
+.watchdiv{
+    position: relative;
+    display: inline-block;
+}
+
+/* .watchdiv img{
+    width: 100%;
+    height: auto;
+} */
+
+.watchdiv .overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    pointer-events: none;
+}
+
+#thankyou-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+#thankyou-modal .modal-content {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#close-modal {
+    margin-top: 20px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 5px;
+    background: #212134;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
