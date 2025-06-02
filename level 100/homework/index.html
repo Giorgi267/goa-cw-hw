@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./imgs/Amazon-logo.png">
+        <div class="user-info" style="margin-left:auto; display:none; align-items:center; gap:10px;">
+            <span id="user-name"></span>
+            <button id="logout-btn" style="padding:6px 16px; border:none; border-radius:5px; background:#212134; color:white; cursor:pointer;">Logout</button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="watchdiv">
+                <img src="./imgs/pink.png" alt="">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="optiondiv">
+                <h1 id="par">FitBit 19 - The Smartest Watch</h1>
+                <p id="heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quas repudiandae odio laudantium sint quam, <br> a obcaecati ipsam veniam rerum?</p>
+                <div class="colored">
+                    <h2>select color</h2>
+                    <div class="colors">
+                        <div class="black"></div>
+                        <div class="red"></div>
+                        <div class="blue"></div>
+                        <div class="purple"></div>
+                    </div>
+                </div>
+
+                <div class="features">
+                    <h3>Features</h3>
+                    <div class="time">
+                        <button>Time</button>
+                        <button>Heart Rate</button>
+                    </div>
+                </div>
+                <button class="buy">Buy now</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="thankyou-modal">
+        <div class="modal-content">
+            <h2>Thanks, you bought watch!</h2>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
